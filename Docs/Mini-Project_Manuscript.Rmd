@@ -1,0 +1,34 @@
+---
+title: "Mini-Project Manuscript"
+author: "Dylan George"
+date: "2026-02-12"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: references.bib
+csl: american-chemical-society.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warnings = FALSE)
+```
+
+## Load Packages
+
+```{r Package_loading, message = FALSE, warning = FALSE}
+library(here)
+library(rticles)
+```
+
+## Background
+
+There are sex-based differences in parental investment in Adelie penguins[@beaulieu2009].
+
+There are sex-based differences in growth rate and diets in Adelie penguins [@sex-base].
+
+Foraging frequency in Adelie penguins causes differences in body mass [@lescroël2021].
+
+# References
+
+::: {#refs}
+:::

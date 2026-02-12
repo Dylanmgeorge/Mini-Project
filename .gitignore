@@ -14,7 +14,7 @@
 # Output files from R CMD build
 /*.tar.gz
 # don't store data; we'll use proper data repo
-#/data
+#/data CHANGE LATER!!!!! #####################################
 /renv
 # Output files from R CMD check
 /*.Rcheck/
@@ -34,7 +34,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 # pkgdown site
-docs/
+#docs CHANGE LATER!!!!!! ########################################
 # translation temp files
 po/*~
 # RStudio Connect folder
