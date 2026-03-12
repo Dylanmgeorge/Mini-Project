@@ -15,7 +15,17 @@ Adelie_Penguin_Stats_Flipper_Length <- Adelie_Penguin_processed_dataset %>%
   group_by(Island) %>%
   summarise(
     Count = n() - naniar::n_miss(Flipper_Length_mm),
-    Count_NA = naniar::n_miss(Flipper_Length_mm))
+    Count_NA = naniar::n_miss(Flipper_Length_mm),
+    Mean = mean(Flipper_Length_mm, na.rm = TRUE),
+    SD = sd(Flipper_Length_mm, na.rm = TRUE),
+    SEM = SD/sqrt(Count),
+    Low_95_confint = t.test(Flipper_Length_mm, conf.level = 0.95)$conf.int[1],
+    Upper_95_confint = t.test(Flipper_Length_mm, conf.level = 0.95)$conf.int[2])
+
+###Write (save) table to outputs
+
+write.csv(Adelie_Penguin_Stats_Flipper_Length, here::here("outputs", "Adelie_Penguin_Stats_Flipper_Length.csv"), row.names = FALSE)
+
 
 ###Generate Graph 1
 Adelie_Penguin_ViolinPlot_Flipper_Length <- Adelie_Penguin_processed_dataset %>% 
@@ -46,9 +56,18 @@ Adelie_Penguin_Stats_Body_mass <- Adelie_Penguin_processed_dataset %>%
   group_by(Island) %>%
   summarise(
     Count = n() - naniar::n_miss(Body_mass_g),
-    Count_NA = naniar::n_miss(Body_mass_g))
+    Count_NA = naniar::n_miss(Body_mass_g),
+    Mean = mean(Body_mass_g, na.rm = TRUE),
+    SD = sd(Body_mass_g, na.rm = TRUE),
+    SEM = SD/sqrt(Count),
+    Low_95_confint = t.test(Body_mass_g, conf.level = 0.95)$conf.int[1],
+    Upper_95_confint = t.test(Body_mass_g, conf.level = 0.95)$conf.int[2])
 
-###Generate Graph 1
+###Write (save) table to outputs
+
+write.csv(Adelie_Penguin_Stats_Body_mass, here::here("outputs", "Adelie_Penguin_Stats_Body_mass.csv"), row.names = FALSE)
+
+###Generate Graph 2
 Adelie_Penguin_ViolinPlot_Body_mass <- Adelie_Penguin_processed_dataset %>% 
   ggplot() +
   geom_violin(aes(x = Island, y = Body_mass_g, colour = Island)) +
