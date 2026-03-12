@@ -1,0 +1,8 @@
+﻿Variable ID,Variable Name,Variable Definition,Variable Type,Allowable Values/Parameters,Requirements,Requirement,Notes
+,Species,,,,,,
+,Region,,,,,,
+,Individual ID,,,,,,
+,Island,,,,,,
+,Flipper_Length_mm,,,,,,
+,Body_Mass_g,,,,,,
+,Sex,,,,,,
