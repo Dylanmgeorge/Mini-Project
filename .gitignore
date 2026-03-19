@@ -8,7 +8,7 @@
 .Rproj.user
 .Ruserdata
 # R profile
-.Rprofile
+#.Rprofile CHANGE LATER!!!!! ############################### remove the hashtag
 # Example code in package build process
 *-Ex.R
 # Output files from R CMD build
@@ -16,6 +16,7 @@
 # don't store data; we'll use proper data repo
 #/data CHANGE LATER!!!!! ################################## remove the hashtag
 /renv
+renv/library/
 # Output files from R CMD check
 /*.Rcheck/
 # RStudio files
