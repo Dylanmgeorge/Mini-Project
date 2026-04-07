@@ -8,7 +8,9 @@ library(readr)
 
 Adelie_Penguin_raw_dataset <- read.csv(here::here("data", "data_raw", "Adelie_Penguin_raw_data.csv"))
 
-#Transform data into processed data
+#Transform data into processed data 
+##Ensure that the processed dataset only includes variables of importance
+##-Sex, Species, Region, Penguin ID, Island, Body mass and Flipper length
 
 Adelie_Penguin_processed_data <- Adelie_Penguin_raw_dataset %>%
   dplyr::filter(Sex == "FEMALE")%>%
