@@ -35,7 +35,7 @@ Hypothesis 2 (non-directional): There is a mean difference in the body mass (g) 
 
 All methods for data collection can be found at the source study [here](https://pallter.marine.rutgers.edu/catalog/erddap/dataset.php?dataset=StructuralSizeMeasurementsAndIsotopicSignaturesAdeliePenguins).
 
-Using the data sourced from the study above, the body mass and flipper length variables of the female Adelie penguins were analyzed for similarity across the three islands in the study: Biscoe, Dream and Torgerson. Two descriptive statistics tables were generated to display the mean flipper length and mean body mass values along with measures of uncertainty. Two violin plots were then produced to visualize if there was a difference between the islands for both flipper length and body mass. Data and code to replicate these methods are available in the data and code availability section.
+Using the data sourced from the study above @lter, the body mass and flipper length variables of the female Adelie penguins were analyzed for similarity across the three islands in the study: Biscoe, Dream and Torgerson. Two descriptive statistics tables were generated to display the mean flipper length and mean body mass values along with measures of uncertainty. Two violin plots were then produced to visualize if there was a difference between the islands for both flipper length and body mass. Data and code to replicate these methods are available in the data and code availability section.
 
 # Results
 
@@ -47,7 +47,7 @@ The data was analyzed to test if there was a mean difference of flipper length b
 
 Adelie_Penguin_Stats_Flipper_Length <- readr::read_csv(here::here("outputs", "Adelie_Penguin_Stats_Flipper_Length.csv"))
 
-kable(Adelie_Penguin_Stats_Flipper_Length, caption = "Table 1. Table of descriptive statistics displaying the mean Flipper Lengths (mm) of Female Adelie Penguins of the Biscoe, Dream and Torgerson islands. The count is the number of penguins analyzed from that island, SD is standard deviation of the mean, SEM is the standard error of the mean, Low_95_confint is the lower bound of the 95% confidence interval of the mean and Upper_95_confint is the upper bound of the 95% confidence interval.", digits = 4)
+kable(Adelie_Penguin_Stats_Flipper_Length, caption = "Table 1. Table of descriptive statistics displaying the mean Flipper Lengths (mm) of Female Adelie Penguins of the Biscoe, Dream and Torgerson islands. The count is the number of penguins analyzed from that island, SD is standard deviation of the mean, SEM is the standard error of the mean, Low_95_confint is the lower bound of the 95% confidence interval of the mean and Upper_95_confint is the upper bound of the 95% confidence interval.", digits = 3)
 
 ```
 
@@ -65,7 +65,7 @@ The data was then analyzed to test the mean difference of body mass from the fem
 
 Adelie_Penguin_Stats_Body_mass <- readr::read_csv(here::here("outputs", "Adelie_Penguin_Stats_Body_mass.csv"))
 
-kable(Adelie_Penguin_Stats_Body_mass, caption = "Table 2. Table of descriptive statistics displaying the mean body mass (g) of Female Adelie Penguins of the Biscoe, Dream and Torgerson islands. The count is the number of penguins analyzed from that island, SD is standard deviation of the mean, SEM is the standard error of the mean, Low_95_confint is the lower bound of the 95% confidence interval of the mean and Upper_95_confint is the upper bound of the 95% confidence interval.", digits = 4)
+kable(Adelie_Penguin_Stats_Body_mass, caption = "Table 2. Table of descriptive statistics displaying the mean body mass (g) of Female Adelie Penguins of the Biscoe, Dream and Torgerson islands. The count is the number of penguins analyzed from that island, SD is standard deviation of the mean, SEM is the standard error of the mean, Low_95_confint is the lower bound of the 95% confidence interval of the mean and Upper_95_confint is the upper bound of the 95% confidence interval.", digits = 3)
 
 ```
 
@@ -77,7 +77,7 @@ A violin plot was then used to visualize the body mass measurements across the 3
 
 # Discussion
 
-According to the graphs and tables generated, when comparing the mean flipper lengths and body mass of female Adelie penguins between the Biscoe, Dream and Torgerson islands, there was no significant difference. This suggests that their environments and foraging patterns are likely the similar as flipper length and body mass would have likely increased had the penguins grown larger due to more optimal and frequent foraging patterns@lescroël2021b. However, a statistical test should be employed to provide a more accurate depiction of the data then relying on visual assessment from the graphs and tables generated.
+According to the graphs and tables generated, when comparing the mean flipper lengths and body mass of female Adelie penguins between the Biscoe, Dream and Torgerson islands, there was no significant difference. This suggests that their environments and foraging patterns are likely the similar as flipper length and body mass would have likely increased had the penguins grown larger due to more optimal and frequent foraging [patterns\@lescroël2021b](mailto:patterns@lescroël2021b){.email}. However, a statistical test should be employed to provide a more accurate depiction of the data then relying on visual assessment from the graphs and tables generated.
 
 # Conclusion
 
