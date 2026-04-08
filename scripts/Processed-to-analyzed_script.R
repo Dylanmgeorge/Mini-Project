@@ -89,5 +89,5 @@ ggsave(
   here::here("outputs", "Adelie_Penguin_ViolinPlot_Body_mass.png"),
   plot = Adelie_Penguin_ViolinPlot_Body_mass,
   width = 6, 
-  height = 4
+  height = 4 
 )
