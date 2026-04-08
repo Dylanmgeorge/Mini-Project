@@ -6,7 +6,7 @@ library(readr)
 
 #Load dataset
 
-Adelie_Penguin_raw_dataset <- read.csv(here::here("data", "data_raw", "Adelie_Penguin_raw_data.csv"))
+Adelie_Penguin_raw_dataset <- read.csv(here::here("data", "data_raw", "Adelie_Penguin_raw_data.csv")) 
 
 #Transform data into processed data 
 ##Ensure that the processed dataset only includes variables of importance
