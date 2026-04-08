@@ -1,7 +1,7 @@
 ---
 title: "Island-Based Differences in Size Measurements of Female Adelie Penguins of the Palmer Archipelago Manuscript"
 author: "Dylan George"
-date: "2026-02-12"
+date: "2026-04-09"
 output:
   pdf_document: default
   html_document: default
