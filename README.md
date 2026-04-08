@@ -30,7 +30,7 @@ In the data folder of the root directory, the data_raw folder contains the raw d
 
 In the scripts folder of the root directory, the Raw-to-processed_script includes the necessary code to transform the raw data into processed data. Similarly, the Processed-to-analyzed_script includes the code necessary to create the tables of descriptive statistics and the violin plots.
 
-In the outputs folder within the root directory, the table of descriptive statistics and violin plots for body mass and flipper length can be found.
+In the outputs folder within the root directory, the tables of descriptive statistics and violin plots for body mass and flipper length can be found.
 
 ## Data-Specific Information
 
