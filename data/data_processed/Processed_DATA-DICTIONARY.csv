@@ -3,6 +3,6 @@
 ,Region,Region of the Palmer archapelego where the female penguin was observed,String (continuous),"""Anvers""",Yes,
 ,Individual ID,Unique female penguin identification number,String,Unique alphanumeric values; no dublicates,Yes,
 ,Island,Island where the female penguin was observed,String (continuous),"""Biscoe"", ""Dream"",  ""Torgerson""",Yes,Used in analysis
-,Flipper_Length_mm,Flipper length in milimeters (mm) of the female penguin. Used to assess size differences,Number (continuous),Value ranging from 172 (min) - 202 (max),Yes,Used in analysis
+,Flipper_Length_mm,Flipper length in millimeters (mm) of the female penguin. Used to assess size differences,Number (continuous),Value ranging from 172 (min) - 202 (max),Yes,Used in analysis
 ,Body_Mass_g,Body mass in grams (g) of the female penguins. Used to assess size differences,Number (continuous),Value ranging from 2850 (min) - 3900 (max),Yes,Used in analysis
 ,Sex,Recorded biological sex of penguin,String (continuous),"""FEMALE""",Yes,MALE penguins excluded in analysis

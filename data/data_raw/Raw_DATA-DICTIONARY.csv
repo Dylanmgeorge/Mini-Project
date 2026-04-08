@@ -5,9 +5,9 @@
 ,Stage,Stage of penguin maturity,String (continuous),"""Adult, 1 Egg Stage""",Yes,
 ,Individual ID,Unique penguin identification number,String,Unique alphanumeric values; no dublicates,Yes,
 ,Clutch Completion,Did the penguin successfully produce a clutch of eggs,String (continuous),"""Yes"", ""No""",Yes,
-,Culmen Length (mm),Culmen (bill) length in milimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 32.1 (min) - 46 (max); null values possible,No,
-,Culmen Depth (mm),Culmen (bill) depth in milimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 15.5 (min) - 21.5 (max); null values possible,No,
-,Flipper Length (mm),Flipper length in milimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 172 (min) - 210 (max); null values possible,Yes,Used in analysis
+,Culmen Length (mm),Culmen (bill) length in millimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 32.1 (min) - 46 (max); null values possible,No,
+,Culmen Depth (mm),Culmen (bill) depth in millimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 15.5 (min) - 21.5 (max); null values possible,No,
+,Flipper Length (mm),Flipper length in millimeters (mm) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 172 (min) - 210 (max); null values possible,Yes,Used in analysis
 ,Body Mass (g),Body mass in grams (g) of the penguin. Used to assess size differences,Number (continuous),Value ranging from 2850 (min) - 4775 (max); null values possible,Yes,Used in analysis
 ,Sex,Recorded biological sex of penguin,String (continuous),"""MALE"" , ""FEMALE"" ; null values possible",Yes,"For some penguins, no blood sample was taken for sex determination"
 ,Delta 15 N (o/oo),"The ratio of nitrogen isotopes (¹⁵N/¹⁴N) in penguin tissue, in parts per thousand (‰). Used as an indicator of trophic level and diet.",Number (continuous),Approximate range of 7.5-10; null values possible,No,"For some penguins, not enough blood was collected for isotopes."
