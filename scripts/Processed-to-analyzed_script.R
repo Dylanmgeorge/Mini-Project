@@ -1,3 +1,7 @@
+#Use the renv::restore() function to ensure the correct packages and package versions are installed
+
+renv::restore()
+
 #Load Packages
 
 library(here)
